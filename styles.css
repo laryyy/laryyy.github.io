@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure header is above the wave */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.wave-container {
+    position: relative;
+    height: 150px; /* Adjust height based on preference */
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.project {
+    background: rgba(244, 244, 244, 0.1); /* Light background for project cards */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+footer {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

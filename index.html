@@ -1,81 +1,62 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: black; /* Set the background color to black */
-    overflow: hidden; /* Prevent scrollbars due to wave lines */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Wave effect using pseudo-elements */
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
-    opacity: 0.2; /* Adjust the opacity for subtle waves */
-    z-index: -1; /* Send behind the content */
-    animation: wave 10s linear infinite; /* Add wave animation */
-}
+    <div class="wave-container">
+        <!-- SVG Wave Background -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1" d="M0,128L30,160C60,192,120,256,180,266.7C240,277,300,235,360,202.7C420,171,480,149,540,160C600,171,660,213,720,218.7C780,224,840,192,900,160C960,128,1020,96,1080,96C1140,96,1200,128,1260,160C1320,192,1380,224,1410,240L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320H0Z"></path>
+        </svg>
+    </div>
 
-@keyframes wave {
-    0% { background-position: 0 0; }
-    100% { background-position: 100% 0; }
-}
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Profile Picture">
+        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I love working with HTML, CSS, and JavaScript.</p>
+    </section>
 
-header {
-    background: rgba(51, 51, 51, 0.8); /* Semi-transparent header for contrast */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Description of project 3.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
 
-header h1 {
-    margin: 0;
-}
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-    color: #fff; /* Set text color to white */
-}
-
-#about img {
-    max-width: 150px;
-    border-radius: 50%;
-}
-
-.project {
-    background: rgba(244, 244, 244, 0.1); /* Light background for project cards */
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-footer {
-    background: rgba(51, 51, 51, 0.8); /* Semi-transparent footer */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

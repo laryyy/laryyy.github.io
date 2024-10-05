@@ -7,11 +7,11 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    background-color: #000000; /* Black background for futuristic appeal */
+    background-color: #000000; /* Black background for a minimalistic appeal */
 }
 
 header {
-    background: rgba(0, 0, 0, 0.8); /* Slightly transparent header */
+    background: rgba(0, 0, 0, 0.9); /* Dark header */
     padding: 20px;
     text-align: center;
     position: sticky;
@@ -38,11 +38,6 @@ nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #f39c12; /* Highlight color on hover */
 }
 
 .background {
@@ -60,7 +55,7 @@ nav a:hover {
 }
 
 .hero {
-    background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
     color: #ffffff;
     padding: 100px 20px;
     text-align: center;
@@ -94,16 +89,10 @@ section {
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-}
-
-.project:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Shadow effect */
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.8); /* Slightly transparent footer */
+    background: rgba(0, 0, 0, 0.9); /* Dark footer */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;

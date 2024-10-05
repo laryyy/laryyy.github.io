@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
-    background: url('C:/Users/chdim/OneDrive/Documents/GitHub/laryyy.github.io/images/img1.jpg') no-repeat center center fixed; /* Use your image name */
+    background: url('images/img1.jpg') no-repeat center center fixed; /* Ensure this path is correct */
     background-size: cover;
 }
 

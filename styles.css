@@ -7,11 +7,11 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    background-color: #1e1e1e; /* Dark background for aesthetic appeal */
+    background-color: #000000; /* Black background for futuristic appeal */
 }
 
 header {
-    background: rgba(30, 30, 30, 0.9); /* Slightly transparent header */
+    background: rgba(0, 0, 0, 0.8); /* Slightly transparent header */
     padding: 20px;
     text-align: center;
     position: sticky;
@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 .hero {
-    background: rgba(30, 30, 30, 0.7); /* Dark transparent background */
+    background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
     color: #ffffff;
     padding: 100px 20px;
     text-align: center;
@@ -90,7 +90,7 @@ section {
 }
 
 .project {
-    background: rgba(244, 244, 244, 0.1); /* Light background for project cards */
+    background: rgba(255, 255, 255, 0.1); /* Light background for project cards */
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
@@ -99,11 +99,11 @@ section {
 
 .project:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Shadow effect */
 }
 
 footer {
-    background: rgba(30, 30, 30, 0.9); /* Slightly transparent footer */
+    background: rgba(0, 0, 0, 0.8); /* Slightly transparent footer */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;

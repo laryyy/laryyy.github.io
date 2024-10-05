@@ -1,71 +1,42 @@
-* {
-    box-sizing: border-box;
+body {
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('images/img2.jpg') no-repeat center center fixed; /* Use your image name */
+    background-size: cover;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 8px;
 }
 
 header {
-    background: #007BFF;
-    color: #fff;
-    padding: 1rem 0;
     text-align: center;
+    padding: 50px 0;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h1 {
+    font-size: 2.5em;
 }
 
 h2 {
-    margin-bottom: 10px;
-    color: #007BFF;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
 }
 
-.picture-gallery {
-    display: flex;
-    justify-content: space-between;
+section {
+    margin: 20px 0;
 }
 
-.picture {
-    flex: 1;
-    margin: 0 10px;
+a {
+    color: #00bfff;
+    text-decoration: none;
 }
 
-.picture img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #007BFF;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+a:hover {
+    text-decoration: underline;
 }

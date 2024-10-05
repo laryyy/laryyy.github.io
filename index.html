@@ -5,34 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for demo purposes, ideally this should be in a separate CSS file */
+        :root {
+            --background-color: rgba(0, 0, 0, 0.8);
+            --text-color: white;
+            --link-color: #00bfff;
+            --link-hover-color: #0099cc;
+            --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            --border-radius: 8px;
+            --padding: 20px;
+            --container-max-width: 1200px;
+            --column-gap: 20px;
+            --date-font-size: 0.9em; /* Smaller date font size */
+            --date-color: #aaa; /* Lighter color for dates */
+            --summary-color: #ccc; /* Lighter color for summaries */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif; 
+            color: var(--text-color);
+            background: url('images/img4.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+        }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 40px; 
+            background: var(--background-color);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5em; 
+            margin: 0; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+        }
+
+        .subtitle {
+            font-size: 1.1em; 
+            color: #ddd; 
+            margin-top: 5px; 
+        }
+
+        .columns {
+            display: flex; 
+            justify-content: space-between; 
+            margin: 20px 0; 
+            gap: var(--column-gap);
+        }
+
+        .column {
+            padding: var(--padding);
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: var(--border-radius); 
+            box-shadow: var(--box-shadow); 
+            flex: 1; 
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--link-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px; 
+            font-size: 1.5em; 
+            text-transform: uppercase; 
+        }
+
+        h3, h4 {
+            margin: 15px 0 5px; 
+        }
+
+        h4 {
+            font-weight: normal; 
+            color: var(--text-color); /* Maintain color consistency */
+        }
+
+        p {
+            margin: 10px 0; /* Spacing between paragraphs */
+        }
+
+        .summary {
+            color: var(--summary-color); /* Lighter color for summaries */
+        }
+
+        .date {
+            font-size: var(--date-font-size); /* Smaller date font */
+            color: var(--date-color); /* Lighter color for dates */
+            margin-bottom: 10px; /* Spacing below date */
+        }
+
+        a {
+            color: var(--link-color); 
+            text-decoration: none; 
+            transition: color 0.3s; 
+        }
+
+        a:hover {
+            text-decoration: underline; 
+            color: var(--link-hover-color); 
+        }
+
+        #contact {
+            margin-top: 40px; 
+            text-align: center; 
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .columns {
+                flex-direction: column; 
+            }
+            .column {
+                margin-bottom: 20px; 
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Your Name</h1>
-            <p>Web Developer | Designer | Your Role</p>
+            <h1>Christos Dimitropoulos</h1>
+            <p class="subtitle">Senior Development Engineer | Mechanical Simulations | Python & Machine Learning</p>
         </header>
+
         <div class="columns">
+            <!-- Technical Background Column -->
             <section id="technical-background" class="column">
                 <h2>Technical Background</h2>
-                <p>Detail your technical skills, education, and any relevant certifications here. List programming languages, frameworks, tools, and technologies you are proficient in.</p>
-            </section>
-            <section id="projects" class="column">
-                <h2>Projects</h2>
+                <p><strong>MSc, Computational Mechanics</strong>, Technical University of Munich, Germany</p>
+                <p><strong>Dipl.-Ing. Production Engineering & Management</strong>, Technical University of Crete, Greece</p>
+                <h3>Modeling & Simulation</h3>
                 <ul>
-                    <li>
-                        <h3>Project 1</h3>
-                        <p>Brief description of project 1.</p>
-                        <a href="https://link-to-your-project-1.com">View Project</a>
-                    </li>
-                    <li>
-                        <h3>Project 2</h3>
-                        <p>Brief description of project 2.</p>
-                        <a href="https://link-to-your-project-2.com">View Project</a>
-                    </li>
-                    <!-- Add more projects as needed -->
+                    <li>Mechanical Simulations</li>
+                    <li>Data analysis</li>
+                    <li>Machine learning </li>
+                </ul>
+                <h3>Coding</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                    <li>Matlab/Octave</li>
                 </ul>
             </section>
+
+            <!-- Projects Column -->
+            <section id="projects" class="column">
+                <h2>Projects & Work Experience</h2>
+                <!-- Work Experience Section -->
+                <p><strong>R&D Test Systems, Senior Development Engineer (Wind Turbines), Prague, CZ</strong></p>
+                <p class="summary">Leading structural simulations for wind turbine compliance with industry standards and customer requirements.</p>
+                <p class="date"><time datetime="2021-04">04/2021 - Present</time></p>
+
+                <p><strong>Siemens, Senior Development Engineer (E-Motors), Prague, CZ</strong></p>
+                <p class="summary">Performed thermal and structural simulations, optimizing electric motor designs for performance and reliability.</p>
+                <p class="date"><time datetime="2018-04">04/2018 - 09/2020</time></p>
+
+                <p><strong>Turbomed, Senior Mechanical Engineer (Turbochargers), Athens, GR</strong></p>
+                <p class="summary">Managed CAE simulations and testing for turbocharger development, ensuring compliance and performance standards.</p>
+                <p class="date"><time datetime="2015-02">02/2015 - 09/2017</time></p>
+
+                <p><strong>Centaur Analytics, Simulation Engineer, Athens, GR</strong></p>
+                <p class="summary">Developed simulation models for energy efficiency in thermal processing of foods, focusing on heat transfer.</p>
+                <p class="date"><time datetime="2014-07">07/2014 - 01/2015</time></p>
+
+                <p><strong>NTUA, Research Engineer (Diesel Engines), Athens, GR</strong></p>
+                <p class="summary">Created system-level models for marine propulsion engines, enhancing predictive maintenance and performance analysis.</p>
+                <p class="date"><time datetime="2013-06">06/2013 - 06/2014</time></p>
+
+                <p><strong>Fraunhofer-Institut, MSc Thesis work (Wind Turbines), Bremerhaven, DE</strong></p>
+                <p class="summary">Researched structural integrity of wind turbines and developed tools for dynamic loading analysis.</p>
+                <p class="date"><time datetime="2012-06">06/2012 - 12/2012</time></p>
+            </section>
+
+            <!-- Customers Column -->
             <section id="customers" class="column">
                 <h2>Customers</h2>
                 <p>List any clients or customers you have worked with, along with their testimonials or brief descriptions of your work with them.</p>
@@ -44,10 +198,11 @@
                 </ul>
             </section>
         </div>
+
         <section id="contact">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, feel free to reach out!</p>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Email: <a href="mailto:ch.dimitropoulos@outlook.com">ch.dimitropoulos@outlook.com</a></p>
         </section>
     </div>
 </body>

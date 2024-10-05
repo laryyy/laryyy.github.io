@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
-    background: url('images/img2.jpg') no-repeat center center fixed; /* Path to your image */
+    background: url('images/img1.jpg') no-repeat center center fixed; /* Path to your image */
     background-size: cover; /* Ensures the background image covers the entire page */
 }
 

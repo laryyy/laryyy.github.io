@@ -5,6 +5,8 @@ body {
     line-height: 1.6;
     background-color: black; /* Black background */
     color: white; /* White text color */
+    position: relative; /* For absolute positioning of the background */
+    overflow: hidden; /* Prevent scrollbars */
 }
 
 header {
@@ -13,7 +15,7 @@ header {
     padding: 20px 0;
     text-align: center;
     position: relative;
-    z-index: 1; /* Ensure header is above the wave */
+    z-index: 1; /* Ensure header is above the background */
 }
 
 header h1 {
@@ -35,14 +37,25 @@ nav a {
     text-decoration: none;
 }
 
-.wave-container {
-    position: relative;
-    height: 150px; /* Adjust height based on preference */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Send the background behind the content */
+}
+
+.background-svg {
+    width: 100%;
+    height: auto;
 }
 
 section {
     padding: 40px 20px;
     margin: 20px 0;
+    position: relative; /* For layering */
+    z-index: 1; /* Ensure sections are above the background */
 }
 
 #about img {
